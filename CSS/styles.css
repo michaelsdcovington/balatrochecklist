@@ -1,0 +1,61 @@
+*{
+    background-color: green;
+}
+.title {
+    text-align: center;
+}
+
+.jokerholder {
+    display: flex;
+    border: solid black 1px;
+    margin: auto;
+    flex-wrap: wrap;
+    justify-content: flex-center;
+    align-items: flex-center;
+    gap: auto;
+    justify-self: center;
+}
+
+
+.joker {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: 0.2s;
+    width: 10%;
+    height: 10%;
+    background-color: transparent;
+}
+
+.legendary{
+    order: 0;
+}
+
+.rare {
+    order: 1;
+}
+
+.uncommon {
+    order: 2;
+}
+
+.common {
+    order: 3;
+}
+
+
+.joker:hover {
+    transform: scale(1.15);
+    display: 12;
+}
+
+.text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+}
