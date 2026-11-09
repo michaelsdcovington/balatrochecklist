@@ -45,8 +45,6 @@ jokers.forEach(joker => {
       target.appendChild(joker); //moves joker to the right box
 
     }
-
-
   });
 
 
