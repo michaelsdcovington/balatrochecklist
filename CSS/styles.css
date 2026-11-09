@@ -1,6 +1,12 @@
-*{
-    background-color: green;
+html {
+    background-image: url("../assets/balatrobackground.jpg");
+
 }
+
+input {
+    background-color: paleturquoise;
+}
+
 .title {
     text-align: center;
     background-color: paleturquoise;
@@ -59,8 +65,4 @@
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
-}
-
-input {
-    background-color: white;
 }
