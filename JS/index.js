@@ -45,11 +45,35 @@ jokers.forEach(joker => {
       target.appendChild(joker); //moves joker to the right box
 
     }
+
+
   });
 
 
-  joker.addEventListener("mouseenter", () => {
+  const textInput = document.getElementById('search');
+  textInput.addEventListener('input', search);
 
+  //search bar
+  function search() {
+    jokers.forEach(joker => {
+      const name = joker.id.toLowerCase();
+
+      if (!name.includes(textInput.value.toLowerCase())) {
+          document.getElementById(joker.id).style.display = "none";
+         // console.log(joker.id);
+        }
+
+      if (name.includes(textInput.value.toLowerCase())) {
+          document.getElementById(joker.id).style.display = "";
+         // console.log(joker.id);
+        }
+
+
+    });
+  }
+
+
+  joker.addEventListener("mouseenter", () => {
     console.log(joker.id);
   });
 });

@@ -3,11 +3,12 @@
 }
 .title {
     text-align: center;
+    background-color: paleturquoise;
 }
 
 .jokerholder {
     display: flex;
-    border: solid black 1px;
+
     margin: auto;
     flex-wrap: wrap;
     justify-content: flex-center;
@@ -58,4 +59,8 @@
   color: white;
   transform: translate(-50%,-50%);
   -ms-transform: translate(-50%,-50%);
+}
+
+input {
+    background-color: white;
 }
